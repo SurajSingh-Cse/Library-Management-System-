@@ -1,4 +1,4 @@
-# Library Management System using SQL Project --P2
+# Library Management System using SQL  --
 
 ## Project Overview
 
@@ -8,7 +8,8 @@
 
 This project demonstrates the implementation of a Library Management System using SQL. It includes creating and managing tables, performing CRUD operations, and executing advanced SQL queries. The goal is to showcase skills in database design, manipulation, and querying.
 
-![Library_project](https://github.com/najirh/Library-System-Management---P2/blob/main/library.jpg)
+![Screenshot 2025-06-20 031102](https://github.com/user-attachments/assets/3ba4f7fe-3b4f-4a13-ac9c-ee040fd23507)
+
 
 ## Objectives
 
@@ -26,9 +27,8 @@ This project demonstrates the implementation of a Library Management System usin
 - **Table Creation**: Created tables for branches, employees, members, books, issued status, and return status. Each table includes relevant columns and relationships.
 
 ```sql
-CREATE DATABASE library_db;
+CREATE DATABASE LibraryManagementSystem;
 
-DROP TABLE IF EXISTS branch;
 CREATE TABLE branch
 (
             branch_id VARCHAR(10) PRIMARY KEY,
@@ -37,9 +37,6 @@ CREATE TABLE branch
             contact_no VARCHAR(15)
 );
 
-
--- Create table "Employee"
-DROP TABLE IF EXISTS employees;
 CREATE TABLE employees
 (
             emp_id VARCHAR(10) PRIMARY KEY,
@@ -50,9 +47,6 @@ CREATE TABLE employees
             FOREIGN KEY (branch_id) REFERENCES  branch(branch_id)
 );
 
-
--- Create table "Members"
-DROP TABLE IF EXISTS members;
 CREATE TABLE members
 (
             member_id VARCHAR(10) PRIMARY KEY,
@@ -61,10 +55,6 @@ CREATE TABLE members
             reg_date DATE
 );
 
-
-
--- Create table "Books"
-DROP TABLE IF EXISTS books;
 CREATE TABLE books
 (
             isbn VARCHAR(50) PRIMARY KEY,
@@ -76,10 +66,6 @@ CREATE TABLE books
             publisher VARCHAR(30)
 );
 
-
-
--- Create table "IssueStatus"
-DROP TABLE IF EXISTS issued_status;
 CREATE TABLE issued_status
 (
             issued_id VARCHAR(10) PRIMARY KEY,
@@ -93,10 +79,6 @@ CREATE TABLE issued_status
             FOREIGN KEY (issued_book_isbn) REFERENCES books(isbn) 
 );
 
-
-
--- Create table "ReturnStatus"
-DROP TABLE IF EXISTS return_status;
 CREATE TABLE return_status
 (
             return_id VARCHAR(10) PRIMARY KEY,
@@ -472,23 +454,6 @@ SELECT * FROM books
 WHERE isbn = '978-0-375-41398-8'
 
 ```
-
-
-
-**Task 20: Create Table As Select (CTAS)**
-Objective: Create a CTAS (Create Table As Select) query to identify overdue books and calculate fines.
-
-Description: Write a CTAS query to create a new table that lists each member and the books they have issued but not returned within 30 days. The table should include:
-    The number of overdue books.
-    The total fines, with each day's fine calculated at $0.50.
-    The number of books issued by each member.
-    The resulting table should show:
-    Member ID
-    Number of overdue books
-    Total fines
-
-
-
 ## Reports
 
 - **Database Schema**: Detailed table structures and relationships.
@@ -499,24 +464,10 @@ Description: Write a CTAS query to create a new table that lists each member and
 
 This project demonstrates the application of SQL skills in creating and managing a library management system. It includes database setup, data manipulation, and advanced querying, providing a solid foundation for data management and analysis.
 
-## How to Use
-
-1. **Clone the Repository**: Clone this repository to your local machine.
-   ```sh
-   git clone https://github.com/najirh/Library-System-Management---P2.git
-   ```
-
-2. **Set Up the Database**: Execute the SQL scripts in the `database_setup.sql` file to create and populate the database.
-3. **Run the Queries**: Use the SQL queries in the `analysis_queries.sql` file to perform the analysis.
-4. **Explore and Modify**: Customize the queries as needed to explore different aspects of the data or answer additional questions.
 
 ## Author - Zero Analyst
 
 This project showcases SQL skills essential for database management and analysis. For more content on SQL and data analysis, connect with me through the following channels:
-
-- **YouTube**: [Subscribe to my channel for tutorials and insights](https://www.youtube.com/@zero_analyst)
-- **Instagram**: [Follow me for daily tips and updates](https://www.instagram.com/zero_analyst/)
-- **LinkedIn**: [Connect with me professionally](https://www.linkedin.com/in/najirr)
-- **Discord**: [Join our community for learning and collaboration](https://discord.gg/36h5f2Z5PK)
+- **LinkedIn**: [Connect with me professionally](www.linkedin.com/in/singh-suraj-negi)
 
 Thank you for your interest in this project!
