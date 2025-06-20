@@ -465,6 +465,6 @@ This project demonstrates the application of SQL skills in creating and managing
 ## Author - Zero Analyst
 
 This project showcases SQL skills essential for database management and analysis. For more content on SQL and data analysis, connect with me through the following channels:
-- **LinkedIn**: [Connect with me professionally](www.linkedin.com/in/singh-suraj-negi)
+- **LinkedIn**: www.linkedin.com/in/singh-suraj-negi
 
 Thank you for your interest in this project!
