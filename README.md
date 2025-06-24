@@ -462,7 +462,7 @@ WHERE isbn = '978-0-375-41398-8'
 This project demonstrates the application of SQL skills in creating and managing a library management system. It includes database setup, data manipulation, and advanced querying, providing a solid foundation for data management and analysis.
 
 
-## Author - Zero Analyst
+
 
 This project showcases SQL skills essential for database management and analysis. For more content on SQL and data analysis, connect with me through the following channels:
 - **LinkedIn**: www.linkedin.com/in/singh-suraj-negi
